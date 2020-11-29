@@ -1,9 +1,9 @@
 body {
   background-color: #3b3a3d;
   color: #fcc942;
-  LINK="#3b3a3d";
-  VLINK="3b3a3d";
-  ALINK="#3b3a3d";
+}
+a {
+  color: #3b3a3d
 }
 body h1 {
    color: #3b3a3d;
