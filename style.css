@@ -38,8 +38,8 @@ a {
   border-radius: 0px 0px 0px 0px;
 }
 .button:hover {
-  background-color: #1a1c1f; /* Green */
-  color: white;
+  background-color: #0b0c0d;
+  color: black;
 }
 .L {
   border-radius: 0px 0px 0px 25px;
