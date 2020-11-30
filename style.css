@@ -7,3 +7,7 @@ a {
   text-decoration:none;
   color: #fca200;
 }
+.responsive {
+  width: 15%;
+  height: auto;
+}
