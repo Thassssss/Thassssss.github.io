@@ -12,7 +12,8 @@ a {
 .responsive {
   width: 15%;
   height: auto;
-  margin-left: -10px;
+  margin-left: -1%;
+  margin-up: -1%;
 }
 .intro {
   font-size:2vw;
