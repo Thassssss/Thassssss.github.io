@@ -37,6 +37,10 @@ a {
   cursor: alias;
   border-radius: 0px 0px 0px 0px;
 }
+.button:hover {
+  background-color: #1a1c1f; /* Green */
+  color: white;
+}
 .L {
   border-radius: 0px 0px 0px 25px;
 }
