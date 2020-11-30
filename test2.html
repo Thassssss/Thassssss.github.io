@@ -1,0 +1,48 @@
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCk-gZ2yPmdksERH__liRl4OjydCn1prk0",
+    authDomain: "thas-12999.firebaseapp.com",
+    databaseURL: "https://thas-12999.firebaseio.com",
+    projectId: "thas-12999",
+    storageBucket: "thas-12999.appspot.com",
+    messagingSenderId: "637339737576",
+    appId: "1:637339737576:web:4fb99c703127358f0e585d",
+    measurementId: "G-MEKCB1S69F"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+ 
+  var uploader = document.getElementById('uploader');
+  var filebutton = document.getElementById('fileButton');
+  
+  fileButton.addEventListener('change', function(e) {
+   var file = e.target.files[0];
+   var storageRef = firebase.storage().ref('folder/' + file.name);
+   var task = storageRef.put(file);
+   task.on('state_changed',
+           function progress(snapshot) {
+             var percentage = snapshot.bytesTransferred /
+             snapshot.totalBytes) * 100;
+             uploader.value = percentage;
+           },
+           
+           function error(err) {
+           
+           },
+           
+           function complete() {
+           
+           }
+           
+    );
+  });
+ </script>
