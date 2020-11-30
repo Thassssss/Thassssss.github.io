@@ -9,15 +9,25 @@
 <br>
 <p class="intro"> Welcome to the Thas homepage </p>
 <br>
--PLACEHOLDER placeholder PlaceHolder Text-
-<br>
-<br>
- <video width="320" height="240" controls>
-  <source src="assets/doorstuck.webm" type="video/webm">
-  <source src="assets/doorstuck.ogg" type="video/ogg">
-  Uh oh you encountered an Error please try again or tell me.
- </video> 
-<br>
+<style media="screen">
+ body {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify content: center;
+  flex-direction: column;
+ }
+ 
+ #uploader {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50%;
+  margin-bottom: 10px;
+ }
+</style>
 <br>
 <br>
 <br>
@@ -47,6 +57,31 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-</script>
+ 
+  var uploader = document.getElementById('uploader');
+  var filebutton = document.getElementById('fileButton');
+  
+  fileButton.addEventListener('change', function(e) {
+   var file = e.target.files[0];
+   var storageRef = firebase.storage().ref('folder/' + file.name);
+   var task = storageRef.put(file);
+   task.on('state_changed',
+           function progress(snapshot) {
+             var percentage = snapshot.bytesTransferred /
+             snapshot.totalBytes) * 100;
+             uploader.value = percentage;
+           },
+           
+           function error(err) {
+           
+           },
+           
+           function complete() {
+           
+           }
+           
+    );
+  });
+ </script>
 </body>
 </html>
