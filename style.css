@@ -34,7 +34,7 @@ a {
   display: inline-block;
   font-size: 1.5vw;
   margin: -2px -2px;
-  cursor: pointer;
+  cursor: alias;
   border-radius: 0px 0px 0px 0px;
 }
 .L {
