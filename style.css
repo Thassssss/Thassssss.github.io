@@ -26,8 +26,9 @@ a {
   border: 1px solid #1a1c1f;
   color: white;
   font-weight: 90;
-  max-width: 20%;
-  padding: 5%;
+  max-width: 12%;
+  min-width: 12%;
+  padding: 2%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
