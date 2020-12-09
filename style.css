@@ -43,8 +43,8 @@ a {
   color: white;
 }
 .L {
-  border-radius: 0px 0px 0px 1%;
+  border-radius: 0px 0px 0px 14px;
 }
 .R {
-  border-radius: 0px 0px 1% 0px;
+  border-radius: 0px 0px 14px 0px;
 }
