@@ -24,7 +24,7 @@ a {
   background-color: #2c2f33;
   font-family: Helvetica, Fantasy, sans-serif;
   border: 1px solid #1a1c1f;
-  color: white;
+  color: #FFFFFF;
   font-weight: 90;
   max-width: 12%;
   min-width: 12%;
@@ -40,7 +40,7 @@ a {
 .button:hover {
   background-color: #1a1c1f;
   border: 2px solid #111214;
-  color: white;
+  color: #FFFFFF;
 }
 .L {
   border-radius: 0px 0px 0px 14px;
@@ -50,6 +50,8 @@ a {
 }
 .raw {
   background-color: #1a1c1f;
-  color: white;
+  color: #FFFFFF;
   border: 2px solid #111214;
+  width: 400px;
+  height: 300px;
 }
