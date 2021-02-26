@@ -1,1 +1,40 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252="><meta http-equiv="refresh" content="3; URL='main.html'" /><title>Thas's site</title><link rel="stylesheet" href="style.css"></head>
+<a href="main.html" class="button L">Front Page</a>
+<a href="information.html" class="button">Site Information</a>
+<a href="list.html" class="button">Game List</a>
+<a href="code.html" class="button">Code</a>
+<a href="page2.html" class="button R">Temp</a>
 
+<h1> ERROR THE FILE YOU ARE LOOKING FOR CANN0T BE FOUND <h1>
+
+
+<h1> Redirecting in </h1><h2><time>00:00:03</time></h2>
+    
+<script> 
+var h2 = document.getElementsByTagName('h2')[0],
+    start = document.getElementById('start'),
+    stop = document.getElementById('stop'),
+    clear = document.getElementById('clear'),
+    seconds = 0, minutes = 1, hours = 0,
+    t;
+
+function add() {
+    seconds--;
+    if (seconds =< 0) {
+        seconds = 60;
+        minutes--;
+        if (minutes =< 0) {
+            minutes = 60;
+            hours--;
+        }
+    }
+    
+    h2.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+
+    timer();
+}
+function timer() {
+    t = setTimeout(add, 500);
+}
+timer();
+</script>
