@@ -6,7 +6,7 @@
 <a href="page2.html" class="button R">Temp</a>
 
 <h1> Java stuff playing with <h1>
-<h1> Ver 1.1 <h1>
+<h1> Ver 1.2 <h1>
 
 
 <h1> Redirecting in </h1><h2><time>00:01:00</time></h2>
@@ -22,8 +22,9 @@ var h2 = document.getElementsByTagName('h2')[0],
 function add() {
     seconds--;
     if (seconds < 0) {
-        seconds = 59;
-        minutes--;
+        if (minutes > 0)
+            seconds = 59;
+            minutes--;
         if (minutes = -1) {
             if (hours > 0) {
                 minutes = 59;
