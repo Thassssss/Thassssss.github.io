@@ -22,10 +22,10 @@ var h2 = document.getElementsByTagName('h2')[0],
 function add() {
     seconds--;
     if (seconds < 0) {
-        if (minutes > 1)
+        if (minutes != 0)
             seconds = 59;
             minutes--;
-        if (minutes = -1) {
+        if (minutes < 0) {
             if (hours > 0) {
                 minutes = 59;
                 hours--;
