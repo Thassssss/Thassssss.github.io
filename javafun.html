@@ -21,7 +21,7 @@ var h2 = document.getElementsByTagName('h2')[0],
 
 function add() {
     seconds--;
-    if (seconds = -1) {
+    if (seconds < 0) {
         seconds = 59;
         minutes--;
         if (minutes = -1) {
