@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252="><meta http-equiv="refresh" content="30; URL='javafun.html'" /><title>Thas's site</title><link rel="stylesheet" href="style.css"></head>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252="><meta http-equiv="refresh" content="60; URL='javafun.html'" /><title>Thas's site</title><link rel="stylesheet" href="style.css"></head>
 <a href="main.html" class="button L">Front Page</a>
 <a href="information.html" class="button">Site Information</a>
 <a href="list.html" class="button">Game List</a>
@@ -20,12 +20,14 @@ var h2 = document.getElementsByTagName('h2')[0],
 
 function add() {
     seconds--;
-    if (seconds <= 0) {
+    if (seconds = -1) {
         seconds = 59;
         minutes--;
-        if (minutes <= 0) {
-            minutes = 59;
-            hours--;
+        if (minutes = -1) {
+            if (hours > 0) {
+                minutes = 59;
+                hours--;
+            }
         }
     }
     
