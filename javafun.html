@@ -20,11 +20,11 @@ var h2 = document.getElementsByTagName('h2')[0],
 
 function add() {
     seconds--;
-    if (seconds =< 0) {
-        seconds = 60;
+    if (seconds <= 0) {
+        seconds = 59;
         minutes--;
-        if (minutes =< 0) {
-            minutes = 60;
+        if (minutes <= 0) {
+            minutes = 59;
             hours--;
         }
     }
@@ -34,7 +34,7 @@ function add() {
     timer();
 }
 function timer() {
-    t = setTimeout(add, 500);
+    t = setTimeout(add, 1000);
 }
 timer();
 </script>
