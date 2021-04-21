@@ -12,8 +12,13 @@ iframe {
 .bottom {
   position: fixed;
   top: 95%;
-  right: 0%;
   color: #151617;
+}
+.left {
+  left: 0%;
+}
+.right {
+  right: 0%;
 }
 a {
   text-decoration:none;
