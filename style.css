@@ -9,8 +9,9 @@ iframe {
 }
 .bottom {
   position: fixed;
-  margin: 30% 0%;
-  color: black;
+  top: 95%;
+  right: 0%;
+  color: #151617;
 }
 a {
   text-decoration:none;
