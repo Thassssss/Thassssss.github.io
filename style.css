@@ -9,6 +9,7 @@ iframe {
 }
 .bottom {
   position: fixed;
+  margin: 30% 0%;
   color: black;
 }
 a {
