@@ -9,6 +9,7 @@ iframe {
 }
 bottom {
   top: 100%;
+  color: black;
 a {
   text-decoration:none;
   color: #fca200;
