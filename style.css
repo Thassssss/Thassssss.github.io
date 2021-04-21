@@ -35,7 +35,7 @@ a {
   font-weight: 90;
   max-width: 12%;
   min-width: 12%;
-  padding: 2%;
+  padding: 1%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -46,7 +46,7 @@ a {
 }
 .button:hover {
   background-color: #1a1c1f;
-  border: 2px solid #111214;
+  border: 1px solid #111214;
   color: #FFFFFF;
 }
 .L {
@@ -58,7 +58,7 @@ a {
 .raw {
   background-color: #2c2f33;
   color: #FFFFFF;
-  border: 2px solid #111214;
+  border: 1px solid #111214;
   width: 400px;
   height: 300px;
   padding: 5px 0px 5px 0px;
