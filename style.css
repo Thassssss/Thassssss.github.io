@@ -23,6 +23,9 @@ iframe {
 a {
   color: #fca200;
 }
+a:hover {
+  color: #b07307;
+}
 .responsive {
   width: 15%;
   height: auto;
