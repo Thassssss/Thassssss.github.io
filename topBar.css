@@ -16,3 +16,23 @@
   cursor: alias;
   border-radius: 0px 0px 0px 0px;
 }
+.L {
+  border-radius: 0px 0px 0px 14px;
+}
+.R {
+  border-radius: 0px 0px 14px 0px;
+}
+.button:hover {
+  background-color: #1a1c1f;
+  border: 1px solid #111214;
+  color: #FFFFFF;
+}
+.responsive {
+  width: 15%;
+  height: auto;
+  margin-left: -0.1%;
+  margin-up: -1%;
+}
+a {
+  color: #fca200;
+}
