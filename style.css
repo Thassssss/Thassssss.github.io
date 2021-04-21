@@ -8,7 +8,7 @@ iframe {
   margin: -0.8% -0.9%;
 }
 .bottom {
-  top: 100%;
+  position: fixed;
   color: black;
 }
 a {
