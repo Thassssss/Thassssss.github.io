@@ -7,7 +7,7 @@ body {
 iframe {
   margin: -0.8% -0.9%;
 }
-bottom {
+.bottom {
   top: 100%;
   color: black;
 }
