@@ -34,17 +34,6 @@ a {
   height: auto;
   font-weight: 100;
 }
-.button:hover {
-  background-color: #1a1c1f;
-  border: 1px solid #111214;
-  color: #FFFFFF;
-}
-.L {
-  border-radius: 0px 0px 0px 14px;
-}
-.R {
-  border-radius: 0px 0px 14px 0px;
-}
 .raw {
   background-color: #2c2f33;
   color: #FFFFFF;
